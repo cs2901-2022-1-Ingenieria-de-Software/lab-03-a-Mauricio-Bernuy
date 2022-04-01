@@ -1,15 +1,12 @@
 package lab.demand;
 
-public class Tax {
-    
-    public double calculateTax(String country) {
-        if (country.equals("PE")) {
-            return 0.18;
-        } else if (country.equals("BR")) {
-            return 0.12;
-        } else {
-            return 0.0;
-        }
-    }
+import lab.demand.TaxParentClass;
 
+public class Tax extends TaxParentClass {
+
+    public Tax(){ // default constructor
+        TaxTable.put("PE", 0.18);
+        TaxTable.put("BR", 0.12);
+    }
 }
+

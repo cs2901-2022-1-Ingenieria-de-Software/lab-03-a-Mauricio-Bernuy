@@ -1,5 +1,6 @@
 package lab;
 
+import lab.demand.AdditionalTax;
 import lab.demand.ManageDemand;
 import lab.demand.Tax;
 import lab.demand.Order;
@@ -12,15 +13,22 @@ public class Main {
     public static void main (String [ ] args) {
         System.out.println("===INICIO====");
         Tax tax = new Tax();
+        AdditionalTax addtax = new AdditionalTax();
+
+        // add additional taxes
+        addtax.addTax("CO", 0.10);
+        addtax.addTax("PE", 0.20);
+        addtax.addTax("BR", 0.30);
+        addtax.setDefaultcountry("CO");
         
-        ManageDemand mg = new ManageDemand(tax);
+        ManageDemand mg = new ManageDemand(tax, addtax);
 
         List<Order> testOrders = buildSampleOrders();
         
         double resultFirst = mg.calculateTotal(testOrders);
         System.out.println(String.format("RESULTADO TOTAL 1 => %s", resultFirst));
 
-        double resultSecond = mg.calculateTotalForWithAdditionalByCountry(testOrders, 0.10, 0.20, 0.30);
+        double resultSecond = mg.calculateTotalForWithAdditionalByCountry(testOrders);
         System.out.println(String.format("RESULTADO TOTAL 2 => %s", resultSecond));
     }
 

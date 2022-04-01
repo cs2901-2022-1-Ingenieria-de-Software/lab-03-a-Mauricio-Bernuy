@@ -1,5 +1,6 @@
 package lab;
 
+import lab.demand.AdditionalTax;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -15,13 +16,14 @@ import java.util.List;
 public class ManageDemandTest {
 
     private Tax tax;
-
+    private AdditionalTax addtax;
     private ManageDemand demand;
 
     @BeforeClass
     public void setup() {
         tax = new Tax();
-        demand =  new ManageDemand(tax);
+        addtax = new AdditionalTax();
+        demand =  new ManageDemand(tax,addtax);
     }
     
     public void test_AllOrdersFromPeru() {
