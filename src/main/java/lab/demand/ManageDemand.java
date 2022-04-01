@@ -14,7 +14,6 @@ public class ManageDemand {
         this.addtax = addtax;
     }
 
-
     public double CalculateTaxes(List<Order> orders){
         // Calculate Taxes
         double taxes = 0.0;
@@ -43,15 +42,6 @@ public class ManageDemand {
         for (Order order : orders) {
             String currCountry = order.getCountry();
             taxes += this.addtax.calculateTax(currCountry);
-//            taxes += AdditionalTaxTable.getOrDefault(currCountry,0.0);
-
-//
-//            if (currCountry.equals("PE")) {
-//                taxes += defaultAdditionalPeru;
-//            } else if (currCountry.equals("BR")) {
-//                taxes += defaultAdditionalBrazil;
-//            } else {
-//                taxes += defaultAdditionalColombia;
         }
         return taxes;
     }
