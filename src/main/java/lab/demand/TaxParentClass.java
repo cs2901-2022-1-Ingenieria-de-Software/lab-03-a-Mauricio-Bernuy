@@ -1,16 +1,19 @@
 package lab.demand;
 import java.util.Hashtable;
 
-class TaxParentClass {
-    Hashtable<String, Double> TaxTable = new Hashtable<String, Double>();
 
-    public TaxParentClass(){ // default constructor
-    }
+// parent class for tax structures
+class TaxParentClass {
+    public Hashtable<String, Double> TaxTable = new Hashtable<String, Double>();
+
+    // default constructor
+    public TaxParentClass(){}
+
+    // add tax value for a given country, adding to the dictionary
     public void addTax(String country, Double Value){
         TaxTable.put(country, Value);
     }
 
-    public double calculateTax(String country) {
-        return TaxTable.getOrDefault(country,0.0);
-    }
+    // returns tax value for a given country, returning a set default value if not present
+    public double calculateTax(String country) { return TaxTable.getOrDefault(country,0.0); }
 }
