@@ -23,13 +23,71 @@ public class ManageDemandTest {
     public void setup() {
         tax = new Tax();
         addtax = new AdditionalTax();
-        demand =  new ManageDemand(tax,addtax);
+
+        // add additional taxes
+        addtax.addTax("CO", 0.10);
+        addtax.addTax("PE", 0.20);
+        addtax.addTax("BR", 0.30);
+        addtax.setDefaultcountry("CO");
+
+        demand = new ManageDemand(tax,addtax);
     }
-    
+
+    // Tax related tests
+
+    // Present tax values in dictionary
+
     public void test_AllOrdersFromPeru() {
         List<Order> ordersFromPeru = TestUtil.buildOrdersPeru();
         double result = demand.calculateTotal(ordersFromPeru);
         Assert.assertEquals(Math.round(result), 7.0);
+    }
+    public void test_AllOrdersFromBrazil() {
+        List<Order> ordersfromBrazil= TestUtil.buildOrdersBrazil();
+        double result = demand.calculateTotal(ordersfromBrazil);
+        Assert.assertEquals(Math.round(result), 5.0);
+    }
+
+    // Missing tax values from dictionary
+
+    public void test_AllOrdersFromColombia() {
+        List<Order> ordersfromColombia= TestUtil.buildOrdersColombia();
+        double result = demand.calculateTotal(ordersfromColombia);
+        Assert.assertEquals(Math.round(result), 0.0);
+    }
+
+    public void test_AllOrdersFromArgentina() {
+        List<Order> ordersfromArgentina= TestUtil.buildOrdersArgentina();
+        double result = demand.calculateTotal(ordersfromArgentina);
+        Assert.assertEquals(Math.round(result), 0.0);
+    }
+
+    // AdditionalTax related tests
+
+    // Present tax values in dictionary
+
+    public void test_AdditionalAdditionalOrdersFromPeru() {
+        List<Order> ordersFromPeru = TestUtil.buildOrdersPeru();
+        double result = demand.calculateTotalForWithAdditionalByCountry(ordersFromPeru);
+        Assert.assertEquals(Math.round(result), 8.0);
+    }
+    public void test_AdditionalAllOrdersFromBrazil() {
+        List<Order> ordersfromBrazil= TestUtil.buildOrdersBrazil();
+        double result = demand.calculateTotalForWithAdditionalByCountry(ordersfromBrazil);
+        Assert.assertEquals(Math.round(result), 12.0);
+    }
+    public void test_AdditionalAllOrdersFromColombia() {
+        List<Order> ordersfromColombia= TestUtil.buildOrdersColombia();
+        double result = demand.calculateTotalForWithAdditionalByCountry(ordersfromColombia);
+        Assert.assertEquals(Math.round(result), 4.0);
+    }
+
+    // Missing tax values from dictionary (default value: CO)
+
+    public void test_AdditionalAllOrdersFromArgentina() {
+        List<Order> ordersfromArgentina= TestUtil.buildOrdersArgentina();
+        double result = demand.calculateTotalForWithAdditionalByCountry(ordersfromArgentina);
+        Assert.assertEquals(Math.round(result), 4.0);
     }
 
     // Add Tests !!
