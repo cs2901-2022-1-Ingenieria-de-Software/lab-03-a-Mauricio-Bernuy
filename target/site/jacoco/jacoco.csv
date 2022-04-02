@@ -1,7 +1,7 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-lab2,lab.demand,ManageDemand,0,124,0,8,0,31,0,9,0,5
-lab2,lab.demand,Tax,0,17,0,0,0,4,0,1,0,1
-lab2,lab.demand,TaxParentClass,0,24,0,0,0,5,0,3,0,3
+lab2,lab.demand,ManageDemand,0,119,0,8,0,30,0,9,0,5
+lab2,lab.demand,Tax,0,13,0,0,0,4,0,1,0,1
+lab2,lab.demand,TaxParentClass,0,29,0,0,0,6,0,4,0,4
 lab2,lab.demand,Order,8,15,0,0,4,6,2,3,2,3
-lab2,lab.demand,AdditionalTax,0,25,0,0,0,5,0,3,0,3
+lab2,lab.demand,AdditionalTax,0,25,0,0,0,4,0,3,0,3
 lab2,lab,Main,113,0,0,0,21,0,3,0,3,0

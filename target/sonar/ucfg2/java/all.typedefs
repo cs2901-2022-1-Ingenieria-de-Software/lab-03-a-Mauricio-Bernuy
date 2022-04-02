@@ -21,11 +21,12 @@ hashCode()java.lang.Object#hashCode()I∏
 setQuantity(Ljava/lang/Long;)/lab.demand.Order#setQuantity(Ljava/lang/Long;)VR
 setCountry(Ljava/lang/String;)0lab.demand.Order#setCountry(Ljava/lang/String;)V?
 getCountry()/lab.demand.Order#getCountry()Ljava/lang/String;j
-*<init>(Ljava/lang/String;Ljava/lang/Long;)<lab.demand.Order#<init>(Ljava/lang/String;Ljava/lang/Long;)V∏
+*<init>(Ljava/lang/String;Ljava/lang/Long;)<lab.demand.Order#<init>(Ljava/lang/String;Ljava/lang/Long;)VÂ
 lab.demand.TaxParentClassjava.lang.Object_
  calculateTax(Ljava/lang/String;);lab.demand.TaxParentClass#calculateTax(Ljava/lang/String;)D/
 <init>()#lab.demand.TaxParentClass#<init>()Vw
-,addTax(Ljava/lang/String;Ljava/lang/Double;)Glab.demand.TaxParentClass#addTax(Ljava/lang/String;Ljava/lang/Double;)VØ
+,addTax(Ljava/lang/String;Ljava/lang/Double;)Glab.demand.TaxParentClass#addTax(Ljava/lang/String;Ljava/lang/Double;)V+
+size()!lab.demand.TaxParentClass#size()DØ
 lab.demand.AdditionalTaxlab.demand.TaxParentClass^
  calculateTax(Ljava/lang/String;):lab.demand.AdditionalTax#calculateTax(Ljava/lang/String;)Dh
 %setDefaultcountry(Ljava/lang/String;)?lab.demand.AdditionalTax#setDefaultcountry(Ljava/lang/String;)V.
@@ -57,61 +58,86 @@ Lof(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)ij
 2getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Rjava.util.Map#getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;}
 +entry(Ljava/lang/Object;Ljava/lang/Object;)Njava.util.Map#entry(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;'
 java.lang.Cloneablejava.lang.Object(
-java.io.Serializablejava.lang.ObjectT
-java.util.Dictionaryjava.lang.Object*
-<init>()java.util.Dictionary#<init>()Võ#
-java.util.Hashtablejava.lang.Cloneablejava.util.Mapjava.util.Dictionaryjava.io.Serializableø
-SreconstitutionPut([Ljava/util/Hashtable$Entry;Ljava/lang/Object;Ljava/lang/Object;)hjava.util.Hashtable#reconstitutionPut([Ljava/util/Hashtable$Entry;Ljava/lang/Object;Ljava/lang/Object;)VM
-equals(Ljava/lang/Object;)/java.util.Hashtable#equals(Ljava/lang/Object;)Z™
-@computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)fjava.util.Hashtable#computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;X
-get(Ljava/lang/Object;)=java.util.Hashtable#get(Ljava/lang/Object;)Ljava/lang/Object;^
-remove(Ljava/lang/Object;)@java.util.Hashtable#remove(Ljava/lang/Object;)Ljava/lang/Object;q
-,remove(Ljava/lang/Object;Ljava/lang/Object;)Ajava.util.Hashtable#remove(Ljava/lang/Object;Ljava/lang/Object;)ZI
-<init>(Ljava/lang/Void;)-java.util.Hashtable#<init>(Ljava/lang/Void;)V+
-	<init>(I)java.util.Hashtable#<init>(I)VQ
-contains(Ljava/lang/Object;)1java.util.Hashtable#contains(Ljava/lang/Object;)Z[
-!containsValue(Ljava/lang/Object;)6java.util.Hashtable#containsValue(Ljava/lang/Object;)ZG
-<init>(Ljava/util/Map;),java.util.Hashtable#<init>(Ljava/util/Map;)V-
+java.io.Serializablejava.lang.Objectï
 
-hashCode()java.util.Hashtable#hashCode()I-
+java.util.AbstractMapjava.util.Mapjava.lang.ObjectO
+equals(Ljava/lang/Object;)1java.util.AbstractMap#equals(Ljava/lang/Object;)Z-
+	isEmpty() java.util.AbstractMap#isEmpty()ZZ
+get(Ljava/lang/Object;)?java.util.AbstractMap#get(Ljava/lang/Object;)Ljava/lang/Object;k
+(eq(Ljava/lang/Object;Ljava/lang/Object;)?java.util.AbstractMap#eq(Ljava/lang/Object;Ljava/lang/Object;)ZY
+containsKey(Ljava/lang/Object;)6java.util.AbstractMap#containsKey(Ljava/lang/Object;)Z@
 
-<init>(IF)java.util.Hashtable#<init>(IF)V>
-values()2java.util.Hashtable#values()Ljava/util/Collection;G
-putAll(Ljava/util/Map;),java.util.Hashtable#putAll(Ljava/util/Map;)V)
-<init>()java.util.Hashtable#<init>()Vg
-'readObject(Ljava/io/ObjectInputStream;)<java.util.Hashtable#readObject(Ljava/io/ObjectInputStream;)Vm
-*readHashtable(Ljava/io/ObjectInputStream;)?java.util.Hashtable#readHashtable(Ljava/io/ObjectInputStream;)Vé
-2getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Xjava.util.Hashtable#getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;'
-clear()java.util.Hashtable#clear()Vå
-1putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Wjava.util.Hashtable#putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)
-rehash()java.util.Hashtable#rehash()V+
-	isEmpty()java.util.Hashtable#isEmpty()ZW
-containsKey(Ljava/lang/Object;)4java.util.Hashtable#containsKey(Ljava/lang/Object;)Z>
+toString()2java.util.AbstractMap#toString()Ljava/lang/String;`
+remove(Ljava/lang/Object;)Bjava.util.AbstractMap#remove(Ljava/lang/Object;)Ljava/lang/Object;9
+keySet()-java.util.AbstractMap#keySet()Ljava/util/Set;]
+!containsValue(Ljava/lang/Object;)8java.util.AbstractMap#containsValue(Ljava/lang/Object;)Z/
 
-toString()0java.util.Hashtable#toString()Ljava/lang/String;y
-0addEntry(ILjava/lang/Object;Ljava/lang/Object;I)Ejava.util.Hashtable#addEntry(ILjava/lang/Object;Ljava/lang/Object;I)Væ
-Jmerge(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)pjava.util.Hashtable#merge(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;7
-keySet()+java.util.Hashtable#keySet()Ljava/util/Set;;
-keys()1java.util.Hashtable#keys()Ljava/util/Enumeration;H
-getIterator(I)6java.util.Hashtable#getIterator(I)Ljava/util/Iterator;i
-(forEach(Ljava/util/function/BiConsumer;)=java.util.Hashtable#forEach(Ljava/util/function/BiConsumer;)VC
+hashCode()!java.util.AbstractMap#hashCode()I@
+values()4java.util.AbstractMap#values()Ljava/util/Collection;~
+)put(Ljava/lang/Object;Ljava/lang/Object;)Qjava.util.AbstractMap#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;I
+putAll(Ljava/util/Map;).java.util.AbstractMap#putAll(Ljava/util/Map;)V+
+<init>()java.util.AbstractMap#<init>()V:
+clone()/java.util.AbstractMap#clone()Ljava/lang/Object;'
+size()java.util.AbstractMap#size()I)
+clear()java.util.AbstractMap#clear()V“,
+java.util.HashMapjava.lang.Cloneablejava.util.AbstractMapjava.util.Mapjava.io.SerializableÜ
+/putVal(ILjava/lang/Object;Ljava/lang/Object;ZZ)Sjava.util.HashMap#putVal(ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/lang/Object;î
+3removeNode(ILjava/lang/Object;Ljava/lang/Object;ZZ)]java.util.HashMap#removeNode(ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/util/HashMap$Node;s
+&comparableClassFor(Ljava/lang/Object;)Ijava.util.HashMap#comparableClassFor(Ljava/lang/Object;)Ljava/lang/Class;\
+remove(Ljava/lang/Object;)>java.util.HashMap#remove(Ljava/lang/Object;)Ljava/lang/Object;m
+"valuesToArray([Ljava/lang/Object;)Gjava.util.HashMap#valuesToArray([Ljava/lang/Object;)[Ljava/lang/Object;o
+,remove(Ljava/lang/Object;Ljava/lang/Object;)?java.util.HashMap#remove(Ljava/lang/Object;Ljava/lang/Object;)Z∆
+JnewTreeNode(ILjava/lang/Object;Ljava/lang/Object;Ljava/util/HashMap$Node;)xjava.util.HashMap#newTreeNode(ILjava/lang/Object;Ljava/lang/Object;Ljava/util/HashMap$Node;)Ljava/util/HashMap$TreeNode;i
+ keysToArray([Ljava/lang/Object;)Ejava.util.HashMap#keysToArray([Ljava/lang/Object;)[Ljava/lang/Object;{
+2internalWriteEntries(Ljava/io/ObjectOutputStream;)Ejava.util.HashMap#internalWriteEntries(Ljava/io/ObjectOutputStream;)V)
+	<init>(I)java.util.HashMap#<init>(I)V+
 
-elements()5java.util.Hashtable#elements()Ljava/util/Enumeration;É
-5defaultWriteHashtable(Ljava/io/ObjectOutputStream;IF)Jjava.util.Hashtable#defaultWriteHashtable(Ljava/io/ObjectOutputStream;IF)V∞
-CcomputeIfPresent(Ljava/lang/Object;Ljava/util/function/BiFunction;)ijava.util.Hashtable#computeIfPresent(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;M
-cloneHashtable()9java.util.Hashtable#cloneHashtable()Ljava/util/Hashtable;Ñ
--replace(Ljava/lang/Object;Ljava/lang/Object;)Sjava.util.Hashtable#replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;|
-)put(Ljava/lang/Object;Ljava/lang/Object;)Ojava.util.Hashtable#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;o
-+replaceAll(Ljava/util/function/BiFunction;)@java.util.Hashtable#replaceAll(Ljava/util/function/BiFunction;)Vó
-?replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Tjava.util.Hashtable#replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Zq
-,writeHashtable(Ljava/io/ObjectOutputStream;)Ajava.util.Hashtable#writeHashtable(Ljava/io/ObjectOutputStream;)Vû
-:compute(Ljava/lang/Object;Ljava/util/function/BiFunction;)`java.util.Hashtable#compute(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;;
+<init>(IF)java.util.HashMap#<init>(IF)VE
+putAll(Ljava/util/Map;)*java.util.HashMap#putAll(Ljava/util/Map;)V'
+<init>()java.util.HashMap#<init>()Ve
+'readObject(Ljava/io/ObjectInputStream;):java.util.HashMap#readObject(Ljava/io/ObjectInputStream;)V5
+tableSizeFor(I)"java.util.HashMap#tableSizeFor(I)Id
+getNode(Ljava/lang/Object;)Ejava.util.HashMap#getNode(Ljava/lang/Object;)Ljava/util/HashMap$Node;∫
+FnewNode(ILjava/lang/Object;Ljava/lang/Object;Ljava/util/HashMap$Node;)pjava.util.HashMap#newNode(ILjava/lang/Object;Ljava/lang/Object;Ljava/util/HashMap$Node;)Ljava/util/HashMap$Node;å
+2getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Vjava.util.HashMap#getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;%
+clear()java.util.HashMap#clear()Vä
+1putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ujava.util.HashMap#putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)
+	isEmpty()java.util.HashMap#isEmpty()Zk
+!prepareArray([Ljava/lang/Object;)Fjava.util.HashMap#prepareArray([Ljava/lang/Object;)[Ljava/lang/Object;º
+Jmerge(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)njava.util.HashMap#merge(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;g
+(forEach(Ljava/util/function/BiConsumer;);java.util.HashMap#forEach(Ljava/util/function/BiConsumer;)VÇ
+-replace(Ljava/lang/Object;Ljava/lang/Object;)Qjava.util.HashMap#replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;z
+)put(Ljava/lang/Object;Ljava/lang/Object;)Mjava.util.HashMap#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;+
 
-entrySet()-java.util.Hashtable#entrySet()Ljava/util/Set;8
-clone()-java.util.Hashtable#clone()Ljava/lang/Object;Q
-getEnumeration(I)<java.util.Hashtable#getEnumeration(I)Ljava/util/Enumeration;k
-)writeObject(Ljava/io/ObjectOutputStream;)>java.util.Hashtable#writeObject(Ljava/io/ObjectOutputStream;)V%
-size()java.util.Hashtable#size()I√
+capacity()java.util.HashMap#capacity()I9
+
+entrySet()+java.util.HashMap#entrySet()Ljava/util/Set;U
+putMapEntries(Ljava/util/Map;Z)2java.util.HashMap#putMapEntries(Ljava/util/Map;Z)V6
+clone()+java.util.HashMap#clone()Ljava/lang/Object;®
+@computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)djava.util.HashMap#computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;V
+get(Ljava/lang/Object;);java.util.HashMap#get(Ljava/lang/Object;)Ljava/lang/Object;c
+&treeifyBin([Ljava/util/HashMap$Node;I)9java.util.HashMap#treeifyBin([Ljava/util/HashMap$Node;I)VY
+!containsValue(Ljava/lang/Object;)4java.util.HashMap#containsValue(Ljava/lang/Object;)ZE
+<init>(Ljava/util/Map;)*java.util.HashMap#<init>(Ljava/util/Map;)V©
+IcompareComparables(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;)\java.util.HashMap#compareComparables(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;)I<
+values()0java.util.HashMap#values()Ljava/util/Collection;º
+EreplacementTreeNode(Ljava/util/HashMap$Node;Ljava/util/HashMap$Node;)sjava.util.HashMap#replacementTreeNode(Ljava/util/HashMap$Node;Ljava/util/HashMap$Node;)Ljava/util/HashMap$TreeNode;3
+reinitialize()!java.util.HashMap#reinitialize()VU
+containsKey(Ljava/lang/Object;)2java.util.HashMap#containsKey(Ljava/lang/Object;)Z∞
+AreplacementNode(Ljava/util/HashMap$Node;Ljava/util/HashMap$Node;)kjava.util.HashMap#replacementNode(Ljava/util/HashMap$Node;Ljava/util/HashMap$Node;)Ljava/util/HashMap$Node;G
+hash(Ljava/lang/Object;)+java.util.HashMap#hash(Ljava/lang/Object;)I/
+loadFactor()java.util.HashMap#loadFactor()F5
+keySet())java.util.HashMap#keySet()Ljava/util/Set;?
+resize()3java.util.HashMap#resize()[Ljava/util/HashMap$Node;Æ
+CcomputeIfPresent(Ljava/lang/Object;Ljava/util/function/BiFunction;)gjava.util.HashMap#computeIfPresent(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;m
++replaceAll(Ljava/util/function/BiFunction;)>java.util.HashMap#replaceAll(Ljava/util/function/BiFunction;)Vï
+?replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Rjava.util.HashMap#replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Zk
+*afterNodeRemoval(Ljava/util/HashMap$Node;)=java.util.HashMap#afterNodeRemoval(Ljava/util/HashMap$Node;)Vú
+:compute(Ljava/lang/Object;Ljava/util/function/BiFunction;)^java.util.HashMap#compute(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;A
+afterNodeInsertion(Z)(java.util.HashMap#afterNodeInsertion(Z)Vi
+)afterNodeAccess(Ljava/util/HashMap$Node;)<java.util.HashMap#afterNodeAccess(Ljava/util/HashMap$Node;)Vi
+)writeObject(Ljava/io/ObjectOutputStream;)<java.util.HashMap#writeObject(Ljava/io/ObjectOutputStream;)V#
+size()java.util.HashMap#size()I√
 lab.Mainjava.lang.Object
 <init>()lab.Main#<init>()VC
 buildSampleOrders(),lab.Main#buildSampleOrders()Ljava/util/List;@
@@ -201,9 +227,9 @@ println(C)java.io.PrintStream#println(C)VK
 lab.demand.Taxlab.demand.TaxParentClass$
 <init>()lab.demand.Tax#<init>()V¸
 lab.demand.ManageDemandjava.lang.ObjectÅ
-2<init>(Llab/demand/Tax;Llab/demand/AdditionalTax;)Klab.demand.ManageDemand#<init>(Llab/demand/Tax;Llab/demand/AdditionalTax;)Vë
+2<init>(Llab/demand/Tax;Llab/demand/AdditionalTax;)Klab.demand.ManageDemand#<init>(Llab/demand/Tax;Llab/demand/AdditionalTax;)V]
+ calculateTaxes(Ljava/util/List;)9lab.demand.ManageDemand#calculateTaxes(Ljava/util/List;)Dë
 :calculateTotalForWithAdditionalByCountry(Ljava/util/List;)Slab.demand.ManageDemand#calculateTotalForWithAdditionalByCountry(Ljava/util/List;)D]
- CalculateTaxes(Ljava/util/List;)9lab.demand.ManageDemand#CalculateTaxes(Ljava/util/List;)D]
  calculateTotal(Ljava/util/List;)9lab.demand.ManageDemand#calculateTotal(Ljava/util/List;)Dy
 .calculateAdditionalByCountry(Ljava/util/List;)Glab.demand.ManageDemand#calculateAdditionalByCountry(Ljava/util/List;)D(
 java.lang.Comparablejava.lang.ObjectÉ

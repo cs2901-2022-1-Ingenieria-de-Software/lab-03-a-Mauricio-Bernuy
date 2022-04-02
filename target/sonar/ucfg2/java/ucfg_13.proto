@@ -1,54 +1,44 @@
 
-Glab.demand.ManageDemand#calculateAdditionalByCountry(Ljava/util/List;)Di
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java' '(."2*Ì
+Slab.demand.ManageDemand#calculateTotalForWithAdditionalByCountry(Ljava/util/List;)Di
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java/ /(:"5*Ì
 2i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java* *(—
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java3 3(—
 ”
 i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java* *(
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java3 3(
 orderlab.demand.Order"__id*
 ""¹
 ¶
 i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java* *(
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java3 3(
 orderlab.demand.Order"
 __arrayGet*
 
 ordersjava.util.List*
 ""*
 3
-1*ì
+1*Ö
 3i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java+! +(&âß
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java4 4(àÝ
 i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java+! +(3
-%0java.lang.String"/lab.demand.Order#getCountry()Ljava/lang/String;*
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java4 4(-
+%1java.lang.Long".lab.demand.Order#getQuantity()Ljava/lang/Long;*
 
-orderlab.demand.Order2getCountry()¯
-¬
+orderlab.demand.Order2getQuantity()*
+2*¤
+5i
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java0 0(3®«
 i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java+ +(4
-currCountryjava.lang.String"__id*
-
-%0java.lang.String½
-º
-i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java, ,( 
-%1lab.demand.AdditionalTax"__id*'*%
-lab.demand.ManageDemand"
-addtaxŸœ
-i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java, ,(:
-%2double":lab.demand.AdditionalTax#calculateTax(Ljava/lang/String;)D* 
-
-%1lab.demand.AdditionalTax*!
-
-currCountryjava.lang.String2 calculateTax(Ljava/lang/String;)*
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java0 0(;
+%0double"Glab.demand.ManageDemand#calculateAdditionalByCountry(Ljava/util/List;)D*
+lab.demand.ManageDemand*
+
+ordersjava.util.List2.calculateAdditionalByCountry(Ljava/util/List;)*
 2*ã
 1i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java. .("s
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java8 8("s
 i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java. .(
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java8 8("
 "":
 ordersjava.util.ListB
 lab.demand.ManageDemand

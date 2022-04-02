@@ -91,7 +91,7 @@ public class TaxTest {
         addtax.addTax("CO", 0.10);
         addtax.addTax("PE", 0.20);
         addtax.addTax("BR", 0.30);
-        addtax.setDefaultcountry("CO");
+        addtax.setDefaultCountry("CO");
 
         Assert.assertEquals(addtax.calculateTax("CO"), 0.10);
         Assert.assertEquals(addtax.calculateTax("PE"), 0.20);

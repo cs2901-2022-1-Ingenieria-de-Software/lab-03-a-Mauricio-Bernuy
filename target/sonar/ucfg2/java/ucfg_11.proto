@@ -1,48 +1,44 @@
 
-9lab.demand.ManageDemand#CalculateTaxes(Ljava/util/List;)Di
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java ( "2*Ã
+9lab.demand.ManageDemand#calculateTotal(Ljava/util/List;)Di
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java ( "5*Ã
 2i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (ó
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (ó
 î
 i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (
 orderlab.demand.Order"__id*
 ""π
 ∂
 i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (
 orderlab.demand.Order"
 __arrayGet*
 
 ordersjava.util.List*
 ""*
 3
-1*õ
+1*÷
 3i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (∞
-≠
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (‡›
 i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (!
-%0lab.demand.Tax"__id*$*"
-lab.demand.ManageDemand"
-tax‚ﬂ
-i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java/ (A
-%1java.lang.String"/lab.demand.Order#getCountry()Ljava/lang/String;*
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (-
+%1java.lang.Long".lab.demand.Order#getQuantity()Ljava/lang/Long;*
 
-orderlab.demand.Order2getCountry()çä
+orderlab.demand.Order2getQuantity()*
+2*à
+5i
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (%íè
 i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (B
-%2double";lab.demand.TaxParentClass#calculateTax(Ljava/lang/String;)D*
-
-%0lab.demand.Tax*
-
-%1java.lang.String2 calculateTax(Ljava/lang/String;)*
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (-
+%0double"9lab.demand.ManageDemand#calculateTaxes(Ljava/util/List;)D*
+lab.demand.ManageDemand*
+
+ordersjava.util.List2 calculateTaxes(Ljava/util/List;)*
 2*„
 1i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java ("s
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java# #("s
 i
-_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java (
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java# #("
 "":
 ordersjava.util.ListB
 lab.demand.ManageDemand

@@ -28,7 +28,7 @@ public class ManageDemandTest {
         addTax.addTax("CO", 0.10);
         addTax.addTax("PE", 0.20);
         addTax.addTax("BR", 0.30);
-        addTax.setDefaultcountry("CO");
+        addTax.setDefaultCountry("CO");
 
         demand = new ManageDemand(tax, addTax);
     }
