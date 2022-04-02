@@ -29,10 +29,12 @@ public class Main {
         List<Order> testOrders = buildSampleOrders();
         
         double resultFirst = mg.calculateTotal(testOrders);
-        logger.log(Level.INFO, String.format("RESULTADO TOTAL 1 => %s", resultFirst));
+        String out1 = String.format("RESULTADO TOTAL 1 => %s", resultFirst);
+        logger.log(Level.INFO,out1);
 
         double resultSecond = mg.calculateTotalForWithAdditionalByCountry(testOrders);
-        logger.log(Level.INFO, String.format("RESULTADO TOTAL 2 => %s", resultSecond));
+        String out2 = String.format("RESULTADO TOTAL 2 => %s", resultSecond);
+        logger.log(Level.INFO, out2);
     }
 
     private static List<Order> buildSampleOrders() {

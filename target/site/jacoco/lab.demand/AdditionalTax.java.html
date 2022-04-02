@@ -5,7 +5,7 @@
     // Default country value to use for the
 <span class="fc" id="L6">    String defaultcountry = &quot;&quot;;</span>
 
-<span class="fc" id="L8">    public void setDefaultcountry(String def){this.defaultcountry = def;}</span>
+<span class="fc" id="L8">    public void setDefaultCountry(String def){this.defaultcountry = def;}</span>
 
     @Override
 <span class="fc" id="L11">    public double calculateTax(String country) { return taxTable.getOrDefault(country, taxTable.getOrDefault(defaultcountry,0.0)); }</span>

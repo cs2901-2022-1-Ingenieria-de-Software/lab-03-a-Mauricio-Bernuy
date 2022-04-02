@@ -7,39 +7,41 @@ import lab.demand.Order;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-<span class="nc" id="L11">public class Main {</span>
-
+<span class="nc" id="L13">public class Main {</span>
+<span class="nc" id="L14">    static Logger logger = Logger.getLogger(Main.class.getName());</span>
     public static void main (String [ ] args) {
-<span class="nc" id="L14">        System.out.println(&quot;===INICIO====&quot;);</span>
+<span class="nc" id="L16">        logger.log(Level.INFO, &quot;===INICIO====&quot;);</span>
 
-<span class="nc" id="L16">        Tax tax = new Tax();</span>
-<span class="nc" id="L17">        AdditionalTax addtax = new AdditionalTax();</span>
+<span class="nc" id="L18">        Tax tax = new Tax();</span>
+<span class="nc" id="L19">        AdditionalTax addtax = new AdditionalTax();</span>
 
         // add additional taxes
-<span class="nc" id="L20">        addtax.addTax(&quot;CO&quot;, 0.10);</span>
-<span class="nc" id="L21">        addtax.addTax(&quot;PE&quot;, 0.20);</span>
-<span class="nc" id="L22">        addtax.addTax(&quot;BR&quot;, 0.30);</span>
-<span class="nc" id="L23">        addtax.setDefaultcountry(&quot;CO&quot;);</span>
+<span class="nc" id="L22">        addtax.addTax(&quot;CO&quot;, 0.10);</span>
+<span class="nc" id="L23">        addtax.addTax(&quot;PE&quot;, 0.20);</span>
+<span class="nc" id="L24">        addtax.addTax(&quot;BR&quot;, 0.30);</span>
+<span class="nc" id="L25">        addtax.setDefaultCountry(&quot;CO&quot;);</span>
         
-<span class="nc" id="L25">        ManageDemand mg = new ManageDemand(tax, addtax);</span>
+<span class="nc" id="L27">        ManageDemand mg = new ManageDemand(tax, addtax);</span>
 
-<span class="nc" id="L27">        List&lt;Order&gt; testOrders = buildSampleOrders();</span>
+<span class="nc" id="L29">        List&lt;Order&gt; testOrders = buildSampleOrders();</span>
         
-<span class="nc" id="L29">        double resultFirst = mg.calculateTotal(testOrders);</span>
-<span class="nc" id="L30">        System.out.println(String.format(&quot;RESULTADO TOTAL 1 =&gt; %s&quot;, resultFirst));</span>
+<span class="nc" id="L31">        double resultFirst = mg.calculateTotal(testOrders);</span>
+<span class="nc" id="L32">        logger.log(Level.INFO, String.format(&quot;RESULTADO TOTAL 1 =&gt; %s&quot;, resultFirst));</span>
 
-<span class="nc" id="L32">        double resultSecond = mg.calculateTotalForWithAdditionalByCountry(testOrders);</span>
-<span class="nc" id="L33">        System.out.println(String.format(&quot;RESULTADO TOTAL 2 =&gt; %s&quot;, resultSecond));</span>
-<span class="nc" id="L34">    }</span>
+<span class="nc" id="L34">        double resultSecond = mg.calculateTotalForWithAdditionalByCountry(testOrders);</span>
+<span class="nc" id="L35">        logger.log(Level.INFO, String.format(&quot;RESULTADO TOTAL 2 =&gt; %s&quot;, resultSecond));</span>
+<span class="nc" id="L36">    }</span>
 
     private static List&lt;Order&gt; buildSampleOrders() {
-<span class="nc" id="L37">        List&lt;Order&gt; testOrders = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L38">        testOrders.add(new Order(&quot;PE&quot;, 10L));</span>
-<span class="nc" id="L39">        testOrders.add(new Order(&quot;PE&quot;, 20L));</span>
-<span class="nc" id="L40">        testOrders.add(new Order(&quot;CO&quot;, 10L));</span>
-<span class="nc" id="L41">        testOrders.add(new Order(&quot;BR&quot;, 10L));</span>
-<span class="nc" id="L42">        return testOrders;</span>
+<span class="nc" id="L39">        List&lt;Order&gt; testOrders = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L40">        testOrders.add(new Order(&quot;PE&quot;, 10L));</span>
+<span class="nc" id="L41">        testOrders.add(new Order(&quot;PE&quot;, 20L));</span>
+<span class="nc" id="L42">        testOrders.add(new Order(&quot;CO&quot;, 10L));</span>
+<span class="nc" id="L43">        testOrders.add(new Order(&quot;BR&quot;, 10L));</span>
+<span class="nc" id="L44">        return testOrders;</span>
     }
 
 }
