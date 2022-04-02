@@ -1,0 +1,44 @@
+
+Slab.demand.ManageDemand#calculateTotalForWithAdditionalByCountry(Ljava/util/List;)Di
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java0 0(:"5*Ì
+2i
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java4 4(—
+”
+i
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java4 4(
+orderlab.demand.Order"__id*
+""¹
+¶
+i
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java4 4(
+orderlab.demand.Order"
+__arrayGet*
+
+ordersjava.util.List*
+""*
+3
+1*Ö
+3i
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java5 5(àÝ
+i
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java5 5(-
+%1java.lang.Long".lab.demand.Order#getQuantity()Ljava/lang/Long;*
+
+orderlab.demand.Order2getQuantity()*
+2*¤
+5i
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java1 1(3®«
+i
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java1 1(;
+%0double"Glab.demand.ManageDemand#calculateAdditionalByCountry(Ljava/util/List;)D*
+lab.demand.ManageDemand*
+
+ordersjava.util.List2.calculateAdditionalByCountry(Ljava/util/List;)*
+2*ã
+1i
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java9 9("s
+i
+_C:/Users/mauri/source/repos/lab-03-a-Mauricio-Bernuy/src/main/java/lab/demand/ManageDemand.java9 9("
+"":
+ordersjava.util.ListB
+lab.demand.ManageDemand

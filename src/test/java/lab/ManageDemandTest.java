@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 
 import lab.demand.ManageDemand;
 import lab.demand.Tax;
-import lab.demand.AdditionalTax;
 import lab.util.TestUtil;
 import lab.demand.Order;
 
@@ -17,21 +16,21 @@ import java.util.List;
 public class ManageDemandTest {
 
     private Tax tax;
-    private AdditionalTax addtax;
+    private AdditionalTax addTax;
     private ManageDemand demand;
 
     @BeforeClass
     public void setup() {
         tax = new Tax();
-        addtax = new AdditionalTax();
+        addTax = new AdditionalTax();
 
         // add additional taxes
-        addtax.addTax("CO", 0.10);
-        addtax.addTax("PE", 0.20);
-        addtax.addTax("BR", 0.30);
-        addtax.setDefaultcountry("CO");
+        addTax.addTax("CO", 0.10);
+        addTax.addTax("PE", 0.20);
+        addTax.addTax("BR", 0.30);
+        addTax.setDefaultcountry("CO");
 
-        demand = new ManageDemand(tax,addtax);
+        demand = new ManageDemand(tax, addTax);
     }
 
     // Tax related tests

@@ -1,21 +1,12 @@
 package lab;
 
 import lab.demand.AdditionalTax;
-import org.junit.Before;
-import org.junit.After;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-import lab.demand.ManageDemand;
 import lab.demand.Tax;
-import lab.demand.AdditionalTax;
-import lab.util.TestUtil;
-import lab.demand.Order;
-
-import java.util.List;
 
 @Test
 public class TaxTest {
@@ -34,7 +25,7 @@ public class TaxTest {
     public void tax_tests_1(){
         setup();
         tax.addTax("CO", 0.10);
-        Assert.assertEquals(tax.TaxTable.size(), 3);
+        Assert.assertEquals(tax.size(), 3);
     }
 
     // add three entries, two already in dictionary
@@ -43,7 +34,7 @@ public class TaxTest {
         tax.addTax("CO", 0.10);
         tax.addTax("PE", 0.20);
         tax.addTax("BR", 0.30);
-        Assert.assertEquals(tax.TaxTable.size(), 3);
+        Assert.assertEquals(tax.size(), 3);
     }
 
     // add three entries, none already in dictionary
@@ -52,7 +43,7 @@ public class TaxTest {
         tax.addTax("CO", 0.10);
         tax.addTax("AR", 0.20);
         tax.addTax("CH", 0.30);
-        Assert.assertEquals(tax.TaxTable.size(), 5);
+        Assert.assertEquals(tax.size(), 5);
     }
 
     // AdditionalTax
@@ -60,7 +51,7 @@ public class TaxTest {
     public void addtax_tests_1(){
         setup();
         addtax.addTax("CO", 0.10);
-        Assert.assertEquals(addtax.TaxTable.size(), 1);
+        Assert.assertEquals(addtax.size(), 1);
     }
 
     // add three entries, none already in dictionary
@@ -69,7 +60,7 @@ public class TaxTest {
         addtax.addTax("CO", 0.10);
         addtax.addTax("PE", 0.20);
         addtax.addTax("BR", 0.30);
-        Assert.assertEquals(addtax.TaxTable.size(), 3);
+        Assert.assertEquals(addtax.size(), 3);
     }
 
     // add three entries, two already in dictionary
@@ -81,7 +72,7 @@ public class TaxTest {
         addtax.addTax("CO", 0.10);
         addtax.addTax("PE", 0.20);
         addtax.addTax("BR", 0.30);
-        Assert.assertEquals(addtax.TaxTable.size(), 3);
+        Assert.assertEquals(addtax.size(), 3);
     }
 
     // Tax

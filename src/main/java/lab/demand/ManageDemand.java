@@ -1,10 +1,9 @@
 package lab.demand;
 
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.List;
 
 public class ManageDemand {
-    Hashtable<String, Double> AdditionalTaxTable = new Hashtable<String, Double>();
 
     private Tax tax;
     private AdditionalTax addtax;
@@ -14,18 +13,18 @@ public class ManageDemand {
         this.addtax = addtax;
     }
 
-    public double CalculateTaxes(List<Order> orders){
+    public double calculateTaxes(List<Order> orders){
         // Calculate Taxes
         double taxes = 0.0;
         for (Order order : orders) {
-            double tax = this.tax.calculateTax(order.getCountry());
-            taxes += tax;
+            double taxCount = this.tax.calculateTax(order.getCountry());
+            taxes += taxCount;
         }
         return taxes;
     }
 
     public double calculateTotal(List<Order> orders){
-        double taxes = CalculateTaxes(orders);
+        double taxes = calculateTaxes(orders);
         // Calculate Total
         double quantities = 0.0;
         for (Order order : orders) {

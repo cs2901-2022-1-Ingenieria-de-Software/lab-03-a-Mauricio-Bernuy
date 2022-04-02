@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ManageDemand.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab2</a> &gt; <a href="index.source.html" class="el_package">lab.demand</a> &gt; <span class="el_source">ManageDemand.java</span></div><h1>ManageDemand.java</h1><pre class="source lang-java linenums">package lab.demand;
+
+import java.util.Hashtable;
+import java.util.List;
+
+public class ManageDemand {
+<span class="fc" id="L7">    Hashtable&lt;String, Double&gt; AdditionalTaxTable = new Hashtable&lt;String, Double&gt;();</span>
+
+    private Tax tax;
+    private AdditionalTax addtax;
+
+<span class="fc" id="L12">    public ManageDemand(Tax tax, AdditionalTax addtax) {</span>
+<span class="fc" id="L13">        this.tax = tax;</span>
+<span class="fc" id="L14">        this.addtax = addtax;</span>
+<span class="fc" id="L15">    }</span>
+
+    public double CalculateTaxes(List&lt;Order&gt; orders){
+        // Calculate Taxes
+<span class="fc" id="L19">        double taxes = 0.0;</span>
+<span class="fc bfc" id="L20" title="All 2 branches covered.">        for (Order order : orders) {</span>
+<span class="fc" id="L21">            double tax = this.tax.calculateTax(order.getCountry());</span>
+<span class="fc" id="L22">            taxes += tax;</span>
+<span class="fc" id="L23">        }</span>
+<span class="fc" id="L24">        return taxes;</span>
+    }
+
+    public double calculateTotal(List&lt;Order&gt; orders){
+<span class="fc" id="L28">        double taxes = CalculateTaxes(orders);</span>
+        // Calculate Total
+<span class="fc" id="L30">        double quantities = 0.0;</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        for (Order order : orders) {</span>
+<span class="fc" id="L32">            double temp = order.getQuantity();</span>
+<span class="fc" id="L33">            quantities += temp;</span>
+<span class="fc" id="L34">        }</span>
+
+<span class="fc" id="L36">        return quantities * taxes;</span>
+    }
+
+    public double calculateAdditionalByCountry(List&lt;Order&gt; orders){
+        // Calculate additionals by country
+<span class="fc" id="L41">        double taxes = 0.0;</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">        for (Order order : orders) {</span>
+<span class="fc" id="L43">            String currCountry = order.getCountry();</span>
+<span class="fc" id="L44">            taxes += this.addtax.calculateTax(currCountry);</span>
+<span class="fc" id="L45">        }</span>
+<span class="fc" id="L46">        return taxes;</span>
+    }
+    public double calculateTotalForWithAdditionalByCountry(List&lt;Order&gt; orders){
+<span class="fc" id="L49">        double taxes = calculateAdditionalByCountry(orders);</span>
+        // Calculate Total
+<span class="fc" id="L51">        double quantities = 0.0;</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">        for (Order order : orders) {</span>
+<span class="fc" id="L53">            double temp = order.getQuantity();</span>
+<span class="fc" id="L54">            quantities += temp;</span>
+<span class="fc" id="L55">        }</span>
+
+<span class="fc" id="L57">        return quantities * taxes;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
