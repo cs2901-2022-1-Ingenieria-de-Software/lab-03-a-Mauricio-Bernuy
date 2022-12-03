@@ -2,86 +2,86 @@
 <testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-02T02:23:30 PET" name="Surefire suite" finished-at="2022-04-02T02:23:30 PET" duration-ms="142">
+  <suite started-at="2022-04-02T02:30:59 PET" name="Surefire suite" finished-at="2022-04-02T02:30:59 PET" duration-ms="162">
     <groups>
     </groups>
-    <test started-at="2022-04-02T02:23:30 PET" name="Surefire test" finished-at="2022-04-02T02:23:30 PET" duration-ms="142">
+    <test started-at="2022-04-02T02:30:59 PET" name="Surefire test" finished-at="2022-04-02T02:30:59 PET" duration-ms="162">
       <class name="lab.TaxTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:lab.TaxTest@530712d]" started-at="2022-04-02T02:23:30 PET" name="setup" finished-at="2022-04-02T02:23:30 PET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:lab.TaxTest@12ed9db6]" started-at="2022-04-02T02:30:59 PET" name="setup" finished-at="2022-04-02T02:30:59 PET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addtax_calc_tests_1()[pri:0, instance:lab.TaxTest@530712d]" started-at="2022-04-02T02:23:30 PET" name="addtax_calc_tests_1" finished-at="2022-04-02T02:23:30 PET" duration-ms="1" status="PASS">
+        <test-method signature="addtax_calc_tests_1()[pri:0, instance:lab.TaxTest@12ed9db6]" started-at="2022-04-02T02:30:59 PET" name="addtax_calc_tests_1" finished-at="2022-04-02T02:30:59 PET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addtax_calc_tests_1 -->
-        <test-method signature="addtax_calc_tests_2()[pri:0, instance:lab.TaxTest@530712d]" started-at="2022-04-02T02:23:30 PET" name="addtax_calc_tests_2" finished-at="2022-04-02T02:23:30 PET" duration-ms="1" status="PASS">
+        <test-method signature="addtax_calc_tests_2()[pri:0, instance:lab.TaxTest@12ed9db6]" started-at="2022-04-02T02:30:59 PET" name="addtax_calc_tests_2" finished-at="2022-04-02T02:30:59 PET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addtax_calc_tests_2 -->
-        <test-method signature="addtax_tests_1()[pri:0, instance:lab.TaxTest@530712d]" started-at="2022-04-02T02:23:30 PET" name="addtax_tests_1" finished-at="2022-04-02T02:23:30 PET" duration-ms="0" status="PASS">
+        <test-method signature="addtax_tests_1()[pri:0, instance:lab.TaxTest@12ed9db6]" started-at="2022-04-02T02:30:59 PET" name="addtax_tests_1" finished-at="2022-04-02T02:30:59 PET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addtax_tests_1 -->
-        <test-method signature="addtax_tests_2()[pri:0, instance:lab.TaxTest@530712d]" started-at="2022-04-02T02:23:30 PET" name="addtax_tests_2" finished-at="2022-04-02T02:23:30 PET" duration-ms="0" status="PASS">
+        <test-method signature="addtax_tests_2()[pri:0, instance:lab.TaxTest@12ed9db6]" started-at="2022-04-02T02:30:59 PET" name="addtax_tests_2" finished-at="2022-04-02T02:30:59 PET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addtax_tests_2 -->
-        <test-method signature="addtax_tests_3()[pri:0, instance:lab.TaxTest@530712d]" started-at="2022-04-02T02:23:30 PET" name="addtax_tests_3" finished-at="2022-04-02T02:23:30 PET" duration-ms="0" status="PASS">
+        <test-method signature="addtax_tests_3()[pri:0, instance:lab.TaxTest@12ed9db6]" started-at="2022-04-02T02:30:59 PET" name="addtax_tests_3" finished-at="2022-04-02T02:30:59 PET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addtax_tests_3 -->
-        <test-method signature="tax_calc_tests_1()[pri:0, instance:lab.TaxTest@530712d]" started-at="2022-04-02T02:23:30 PET" name="tax_calc_tests_1" finished-at="2022-04-02T02:23:30 PET" duration-ms="1" status="PASS">
+        <test-method signature="tax_calc_tests_1()[pri:0, instance:lab.TaxTest@12ed9db6]" started-at="2022-04-02T02:30:59 PET" name="tax_calc_tests_1" finished-at="2022-04-02T02:30:59 PET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tax_calc_tests_1 -->
-        <test-method signature="tax_tests_1()[pri:0, instance:lab.TaxTest@530712d]" started-at="2022-04-02T02:23:30 PET" name="tax_tests_1" finished-at="2022-04-02T02:23:30 PET" duration-ms="0" status="PASS">
+        <test-method signature="tax_tests_1()[pri:0, instance:lab.TaxTest@12ed9db6]" started-at="2022-04-02T02:30:59 PET" name="tax_tests_1" finished-at="2022-04-02T02:30:59 PET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tax_tests_1 -->
-        <test-method signature="tax_tests_2()[pri:0, instance:lab.TaxTest@530712d]" started-at="2022-04-02T02:23:30 PET" name="tax_tests_2" finished-at="2022-04-02T02:23:30 PET" duration-ms="0" status="PASS">
+        <test-method signature="tax_tests_2()[pri:0, instance:lab.TaxTest@12ed9db6]" started-at="2022-04-02T02:30:59 PET" name="tax_tests_2" finished-at="2022-04-02T02:30:59 PET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tax_tests_2 -->
-        <test-method signature="tax_tests_3()[pri:0, instance:lab.TaxTest@530712d]" started-at="2022-04-02T02:23:30 PET" name="tax_tests_3" finished-at="2022-04-02T02:23:30 PET" duration-ms="0" status="PASS">
+        <test-method signature="tax_tests_3()[pri:0, instance:lab.TaxTest@12ed9db6]" started-at="2022-04-02T02:30:59 PET" name="tax_tests_3" finished-at="2022-04-02T02:30:59 PET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tax_tests_3 -->
       </class> <!-- lab.TaxTest -->
       <class name="lab.ManageDemandTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:lab.ManageDemandTest@2a448449]" started-at="2022-04-02T02:23:30 PET" name="setup" finished-at="2022-04-02T02:23:30 PET" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:lab.ManageDemandTest@43f82e78]" started-at="2022-04-02T02:30:59 PET" name="setup" finished-at="2022-04-02T02:30:59 PET" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_AdditionalAdditionalOrdersFromPeru()[pri:0, instance:lab.ManageDemandTest@2a448449]" started-at="2022-04-02T02:23:30 PET" name="test_AdditionalAdditionalOrdersFromPeru" finished-at="2022-04-02T02:23:30 PET" duration-ms="9" status="PASS">
+        <test-method signature="test_AdditionalAdditionalOrdersFromPeru()[pri:0, instance:lab.ManageDemandTest@43f82e78]" started-at="2022-04-02T02:30:59 PET" name="test_AdditionalAdditionalOrdersFromPeru" finished-at="2022-04-02T02:30:59 PET" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AdditionalAdditionalOrdersFromPeru -->
-        <test-method signature="test_AdditionalAllOrdersFromArgentina()[pri:0, instance:lab.ManageDemandTest@2a448449]" started-at="2022-04-02T02:23:30 PET" name="test_AdditionalAllOrdersFromArgentina" finished-at="2022-04-02T02:23:30 PET" duration-ms="1" status="PASS">
+        <test-method signature="test_AdditionalAllOrdersFromArgentina()[pri:0, instance:lab.ManageDemandTest@43f82e78]" started-at="2022-04-02T02:30:59 PET" name="test_AdditionalAllOrdersFromArgentina" finished-at="2022-04-02T02:30:59 PET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AdditionalAllOrdersFromArgentina -->
-        <test-method signature="test_AdditionalAllOrdersFromBrazil()[pri:0, instance:lab.ManageDemandTest@2a448449]" started-at="2022-04-02T02:23:30 PET" name="test_AdditionalAllOrdersFromBrazil" finished-at="2022-04-02T02:23:30 PET" duration-ms="0" status="PASS">
+        <test-method signature="test_AdditionalAllOrdersFromBrazil()[pri:0, instance:lab.ManageDemandTest@43f82e78]" started-at="2022-04-02T02:30:59 PET" name="test_AdditionalAllOrdersFromBrazil" finished-at="2022-04-02T02:30:59 PET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AdditionalAllOrdersFromBrazil -->
-        <test-method signature="test_AdditionalAllOrdersFromColombia()[pri:0, instance:lab.ManageDemandTest@2a448449]" started-at="2022-04-02T02:23:30 PET" name="test_AdditionalAllOrdersFromColombia" finished-at="2022-04-02T02:23:30 PET" duration-ms="1" status="PASS">
+        <test-method signature="test_AdditionalAllOrdersFromColombia()[pri:0, instance:lab.ManageDemandTest@43f82e78]" started-at="2022-04-02T02:30:59 PET" name="test_AdditionalAllOrdersFromColombia" finished-at="2022-04-02T02:30:59 PET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AdditionalAllOrdersFromColombia -->
-        <test-method signature="test_AllOrdersFromArgentina()[pri:0, instance:lab.ManageDemandTest@2a448449]" started-at="2022-04-02T02:23:30 PET" name="test_AllOrdersFromArgentina" finished-at="2022-04-02T02:23:30 PET" duration-ms="1" status="PASS">
+        <test-method signature="test_AllOrdersFromArgentina()[pri:0, instance:lab.ManageDemandTest@43f82e78]" started-at="2022-04-02T02:30:59 PET" name="test_AllOrdersFromArgentina" finished-at="2022-04-02T02:30:59 PET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AllOrdersFromArgentina -->
-        <test-method signature="test_AllOrdersFromBrazil()[pri:0, instance:lab.ManageDemandTest@2a448449]" started-at="2022-04-02T02:23:30 PET" name="test_AllOrdersFromBrazil" finished-at="2022-04-02T02:23:30 PET" duration-ms="1" status="PASS">
+        <test-method signature="test_AllOrdersFromBrazil()[pri:0, instance:lab.ManageDemandTest@43f82e78]" started-at="2022-04-02T02:30:59 PET" name="test_AllOrdersFromBrazil" finished-at="2022-04-02T02:30:59 PET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AllOrdersFromBrazil -->
-        <test-method signature="test_AllOrdersFromColombia()[pri:0, instance:lab.ManageDemandTest@2a448449]" started-at="2022-04-02T02:23:30 PET" name="test_AllOrdersFromColombia" finished-at="2022-04-02T02:23:30 PET" duration-ms="0" status="PASS">
+        <test-method signature="test_AllOrdersFromColombia()[pri:0, instance:lab.ManageDemandTest@43f82e78]" started-at="2022-04-02T02:30:59 PET" name="test_AllOrdersFromColombia" finished-at="2022-04-02T02:30:59 PET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AllOrdersFromColombia -->
-        <test-method signature="test_AllOrdersFromPeru()[pri:0, instance:lab.ManageDemandTest@2a448449]" started-at="2022-04-02T02:23:30 PET" name="test_AllOrdersFromPeru" finished-at="2022-04-02T02:23:30 PET" duration-ms="1" status="PASS">
+        <test-method signature="test_AllOrdersFromPeru()[pri:0, instance:lab.ManageDemandTest@43f82e78]" started-at="2022-04-02T02:30:59 PET" name="test_AllOrdersFromPeru" finished-at="2022-04-02T02:30:59 PET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AllOrdersFromPeru -->

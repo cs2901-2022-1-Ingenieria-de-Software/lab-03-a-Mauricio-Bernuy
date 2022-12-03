@@ -3,5 +3,5 @@ projectKey=cs2901-2022-1-Ingenieria-de-Software_lab-03-a-Mauricio-Bernuy
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.27985
 dashboardUrl=https://sonarcloud.io/dashboard?id=cs2901-2022-1-Ingenieria-de-Software_lab-03-a-Mauricio-Bernuy
-ceTaskId=AX_pKMNIYFH2Wz1LT99b
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX_pKMNIYFH2Wz1LT99b
+ceTaskId=AX_pL40ox8YMnX1jm6Uu
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX_pL40ox8YMnX1jm6Uu

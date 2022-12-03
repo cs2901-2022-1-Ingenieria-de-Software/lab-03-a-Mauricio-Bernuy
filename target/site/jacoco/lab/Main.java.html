@@ -29,19 +29,21 @@ import java.util.logging.Logger;
 <span class="nc" id="L29">        List&lt;Order&gt; testOrders = buildSampleOrders();</span>
         
 <span class="nc" id="L31">        double resultFirst = mg.calculateTotal(testOrders);</span>
-<span class="nc" id="L32">        logger.log(Level.INFO, String.format(&quot;RESULTADO TOTAL 1 =&gt; %s&quot;, resultFirst));</span>
+<span class="nc" id="L32">        String out1 = String.format(&quot;RESULTADO TOTAL 1 =&gt; %s&quot;, resultFirst);</span>
+<span class="nc" id="L33">        logger.log(Level.INFO,out1);</span>
 
-<span class="nc" id="L34">        double resultSecond = mg.calculateTotalForWithAdditionalByCountry(testOrders);</span>
-<span class="nc" id="L35">        logger.log(Level.INFO, String.format(&quot;RESULTADO TOTAL 2 =&gt; %s&quot;, resultSecond));</span>
-<span class="nc" id="L36">    }</span>
+<span class="nc" id="L35">        double resultSecond = mg.calculateTotalForWithAdditionalByCountry(testOrders);</span>
+<span class="nc" id="L36">        String out2 = String.format(&quot;RESULTADO TOTAL 2 =&gt; %s&quot;, resultSecond);</span>
+<span class="nc" id="L37">        logger.log(Level.INFO, out2);</span>
+<span class="nc" id="L38">    }</span>
 
     private static List&lt;Order&gt; buildSampleOrders() {
-<span class="nc" id="L39">        List&lt;Order&gt; testOrders = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L40">        testOrders.add(new Order(&quot;PE&quot;, 10L));</span>
-<span class="nc" id="L41">        testOrders.add(new Order(&quot;PE&quot;, 20L));</span>
-<span class="nc" id="L42">        testOrders.add(new Order(&quot;CO&quot;, 10L));</span>
-<span class="nc" id="L43">        testOrders.add(new Order(&quot;BR&quot;, 10L));</span>
-<span class="nc" id="L44">        return testOrders;</span>
+<span class="nc" id="L41">        List&lt;Order&gt; testOrders = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L42">        testOrders.add(new Order(&quot;PE&quot;, 10L));</span>
+<span class="nc" id="L43">        testOrders.add(new Order(&quot;PE&quot;, 20L));</span>
+<span class="nc" id="L44">        testOrders.add(new Order(&quot;CO&quot;, 10L));</span>
+<span class="nc" id="L45">        testOrders.add(new Order(&quot;BR&quot;, 10L));</span>
+<span class="nc" id="L46">        return testOrders;</span>
     }
 
 }
